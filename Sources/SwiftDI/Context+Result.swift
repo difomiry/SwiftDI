@@ -1,5 +1,5 @@
 public extension Context {
-	static func make<T>(
+	static func resolve<T>(
 		dependency: Dependency.Parent,
 		factory: (Context) -> Scope<Dependency, T>
 	) -> T {
