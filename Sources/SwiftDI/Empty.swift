@@ -1,5 +1,5 @@
-public struct Empty: Dependency {
-	public var parent: Empty { fatalError() }
+public enum Empty {}
 
-	public init() {}
+extension Empty: Dependency {
+	public var parent: Empty { fatalError() }
 }
